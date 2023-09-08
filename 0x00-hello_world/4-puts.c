@@ -1,10 +1,8 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
 * main - Entry point
 *
-* Description: 'Hello put'
-* puts - My function
-* return : Always 0 (Success)
+* Return: Always 0 (Success)
 */
 int main(void)
 {
