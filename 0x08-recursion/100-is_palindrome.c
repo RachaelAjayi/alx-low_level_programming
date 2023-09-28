@@ -43,5 +43,5 @@ int check_pal(char *s, int x, int len)
 		return (0);
 	if (x >= len)
 		return (1);
-	return (check_pal(s, i + 1, len - 1));
+	return (check_pal(s, x + 1, len - 1));
 }
