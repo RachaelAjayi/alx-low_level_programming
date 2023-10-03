@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * main - Program that multiplies two numbers by  taking first two integer arguments
+ * main - Program that multiplies two numbers usually integers`
  * @argc: Number of command line argument
  * @argv: Array name
  * Return: 1 if it does not receive two argument, otherwise 0
