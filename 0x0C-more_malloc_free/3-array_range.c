@@ -3,7 +3,7 @@
 
 /**
  * *array_range - function creates an array of integers
- * @min: minimum range of values 
+ * @min: minimum range of values
  * @max: maximum range of values stored and number of elements
  *
  * Return: pointer to the new created array, NULL if min>max
