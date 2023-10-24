@@ -5,7 +5,7 @@
 
 /**
  * find_listint_loop -function that finds the loop in a linked list
- * @head: header  to the struct listint_t
+ * @head: header  to the  listint_t
  * Return: the adress of the node where the loop starts, or NULL, if no loop
  */
 
@@ -14,8 +14,8 @@ listint_t *find_listint_loop(listint_t *head)
 {
 
 
-	listint_t *slow;
-	listint_t *fast;
+	listint_t *slw;
+	listint_t *fst;
 
 	if (head == NULL)
 		return (NULL);
