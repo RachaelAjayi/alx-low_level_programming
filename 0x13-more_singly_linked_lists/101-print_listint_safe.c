@@ -5,7 +5,7 @@
 
 /**
  * print_listint_safe - function that prints a listint_t linked list
- * @head: pointer to the structure listint_t
+ * @head: beginning or head of a listint_t list
  * Return: number of nodes in the linked list
  */
 
@@ -23,21 +23,23 @@ curr = head;
 
 count = 0;
 
-	while (curr != NULL)
+while (curr != NULL)
 
 {
 	count++;
 	prints = curr - curr->next;
-	printf("[%p] %i\n", (void *)curr, cu 
-			if (prints > 0)
-										{
-											curr = curr->next;
-																				}
-										else
-										{																				printf("-> [%p] %i\n", (void *)curr->next, curr->next->n);
-																				break;
+	printf("[%p] %i\n", (void *)curr, curr->n);
+		if (prints > 0)
+		{
 
-}																				}
+			curr = curr->next;
+																				}
+		else
+		{
+			printf("-> [%p] %i\n", (void *)curr->next, curr->next->n);
+			break;
+		}
+}
 
 return (count);
 
