@@ -14,28 +14,28 @@ listint_t *find_listint_loop(listint_t *head)
 {
 
 
-	listint_t *slw;
+	listint_t *lw;
 	listint_t *fst;
 
 	if (head == NULL)
 		return (NULL);
 
-	slw = head;
+	lw = head;
 	fst = head;
 
 	while (fst != NULL)
 	{
-		slw = slw->next;
+		lw = lw->next;
 		fst = fst->next->next;
-		if (slw == fst)
+		if (lw == fst)
 		{
-			slw = head;
-			while (slw != fst)
+			lw = head;
+			while (lw != fst)
 			{
-				slw = slw->next;
+				lw = lw->next;
 				fst = fst->next;
 			}
-			return (slw);
+			return (lw);
 		}
 	}
 	return (NULL);
